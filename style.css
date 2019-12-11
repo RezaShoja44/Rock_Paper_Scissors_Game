@@ -1,0 +1,37 @@
+body {
+  background: #221f1f;
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 50px auto 0 auto;
+}
+
+th {
+  font-family: "Girassol", cursive;
+  font-size: 30px;
+  border: 2px solid #949191;
+}
+
+th :first-child {
+  border-radius: 10px 0 0 0;
+}
+
+td {
+  border: 2px solid #949191;
+  margin: 0;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
