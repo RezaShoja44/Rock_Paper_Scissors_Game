@@ -32,27 +32,27 @@ window.onload = function() {
 
       let Status = newRow.insertCell(-1);
       let StatusText;
-      if (playerSelection == computerSelection) {
-        StatusText = document.createTextNode("No Win!");
+
+      function setStatus(winner) {
+        StatusText = document.createTextNode(winner);
         Status.appendChild(StatusText);
+      }
+
+      if (playerSelection == computerSelection) {
+        setStatus("No Win!");
       } else if (
         playerSelection == "Paper" &&
         computerSelection == "Scissors"
       ) {
-        StatusText = document.createTextNode("AI Wins!");
-        Status.appendChild(StatusText);
+        setStatus("AI Wins!");
       } else if (playerSelection == "Rock" && computerSelection == "Paper") {
-        StatusText = document.createTextNode("AI Wins!");
-        Status.appendChild(StatusText);
+        setStatus("AI Wins!");
       } else if (playerSelection == "Scissors" && computerSelection == "Rock") {
-        StatusText = document.createTextNode("AI Wins!");
-        Status.appendChild(StatusText);
+        setStatus("AI Wins!");
       } else if (playerSelection == "Rock" && computerSelection == "Scissors") {
-        StatusText = document.createTextNode("Player Wins!");
-        Status.appendChild(StatusText);
+        setStatus("Player Wins!");
       } else {
-        StatusText = document.createTextNode("Player Wins!");
-        Status.appendChild(StatusText);
+        setStatus("Player Wins!");
       }
     }
 
